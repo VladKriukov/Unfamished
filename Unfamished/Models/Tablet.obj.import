@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Tablet.obj-83bb3a8d9ae8e1904bb593c0ca60f71e.mesh"
+
+[deps]
+
+files=[ "res://.import/Tablet.obj-83bb3a8d9ae8e1904bb593c0ca60f71e.mesh" ]
+
+source_file="res://Models/Tablet.obj"
+dest_files=[ "res://.import/Tablet.obj-83bb3a8d9ae8e1904bb593c0ca60f71e.mesh", "res://.import/Tablet.obj-83bb3a8d9ae8e1904bb593c0ca60f71e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

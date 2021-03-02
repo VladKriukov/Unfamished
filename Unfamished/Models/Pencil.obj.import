@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pencil.obj-1b683debffb654dd5a6134e05a98ea86.mesh"
+
+[deps]
+
+files=[ "res://.import/Pencil.obj-1b683debffb654dd5a6134e05a98ea86.mesh" ]
+
+source_file="res://Models/Pencil.obj"
+dest_files=[ "res://.import/Pencil.obj-1b683debffb654dd5a6134e05a98ea86.mesh", "res://.import/Pencil.obj-1b683debffb654dd5a6134e05a98ea86.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pan.obj-d8920868aca413a88490b81feeb84c70.mesh"
+
+[deps]
+
+files=[ "res://.import/Pan.obj-d8920868aca413a88490b81feeb84c70.mesh" ]
+
+source_file="res://Models/Pan.obj"
+dest_files=[ "res://.import/Pan.obj-d8920868aca413a88490b81feeb84c70.mesh", "res://.import/Pan.obj-d8920868aca413a88490b81feeb84c70.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

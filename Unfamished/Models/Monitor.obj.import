@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Monitor.obj-6bb4fb55a8819f0e987874dac8aa89e6.mesh"
+
+[deps]
+
+files=[ "res://.import/Monitor.obj-6bb4fb55a8819f0e987874dac8aa89e6.mesh" ]
+
+source_file="res://Models/Monitor.obj"
+dest_files=[ "res://.import/Monitor.obj-6bb4fb55a8819f0e987874dac8aa89e6.mesh", "res://.import/Monitor.obj-6bb4fb55a8819f0e987874dac8aa89e6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

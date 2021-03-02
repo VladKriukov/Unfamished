@@ -1,0 +1,317 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://UI/Shop.tres" type="StyleBox" id=1]
+[ext_resource path="res://UI/ShopItems/Monitor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/ShopItems/Tablet.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/Icons/Apple.png" type="Texture" id=4]
+[ext_resource path="res://UI/ShopItems/TV.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/ShopItems/FancyMonitor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/ShopItems/Baguette.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/ShopItems/Banana.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/ShopItems/Plate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://UI/ShopItems/TableFancy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://UI/ShopItems/Wardrobe.tscn" type="PackedScene" id=11]
+[ext_resource path="res://UI/ShopItems/Chair.tscn" type="PackedScene" id=12]
+[ext_resource path="res://UI/ShopItems/CoffeeTable.tscn" type="PackedScene" id=13]
+[ext_resource path="res://UI/ShopItems/Couch.tscn" type="PackedScene" id=14]
+[ext_resource path="res://UI/ShopItems/Crib.tscn" type="PackedScene" id=15]
+[ext_resource path="res://UI/ShopItems/Cabinet.tscn" type="PackedScene" id=16]
+[ext_resource path="res://UI/ShopItems/Table.tscn" type="PackedScene" id=17]
+[ext_resource path="res://UI/ShopItems/BabyDistractionToy.tscn" type="PackedScene" id=18]
+[ext_resource path="res://UI/ShopItems/DrawingTable.tscn" type="PackedScene" id=19]
+[ext_resource path="res://UI/ShopItems/CounterTopCorner.tscn" type="PackedScene" id=20]
+[ext_resource path="res://UI/ShopItems/Pan.tscn" type="PackedScene" id=21]
+[ext_resource path="res://UI/ShopItems/CounterTop.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Scenes/Inventory.tscn" type="PackedScene" id=23]
+[ext_resource path="res://UI/ItemFrame.png" type="Texture" id=24]
+[ext_resource path="res://UI/ItemFramePressed.png" type="Texture" id=25]
+[ext_resource path="res://Scripts/ShopItem.gd" type="Script" id=26]
+[ext_resource path="res://UI/ShopPressed.tres" type="StyleBox" id=27]
+[ext_resource path="res://Funhouse.ttf" type="DynamicFontData" id=28]
+[ext_resource path="res://Scripts/ShopAnimation.gd" type="Script" id=29]
+[ext_resource path="res://UI/ItemFrameHover.png" type="Texture" id=30]
+[ext_resource path="res://UI/ItemFrameTransparent.png" type="Texture" id=31]
+
+[sub_resource type="DynamicFont" id=1]
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 28 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "On"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pivot:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.1, 0.1 ), Vector2( 0.9, 1.1 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 102, -50 ), Vector2( 102, 0 ), Vector2( 102, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 28 )
+
+[node name="Shop" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" parent="." instance=ExtResource( 23 )]
+
+[node name="Pivot" type="Node2D" parent="."]
+position = Vector2( 102, -50 )
+scale = Vector2( 1.1, 0.1 )
+
+[node name="TabContainer" type="TabContainer" parent="Pivot"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -102.0
+margin_right = 397.0
+margin_bottom = 344.0
+custom_fonts/font = SubResource( 1 )
+tab_align = 0
+drag_to_rearrange_enabled = true
+use_hidden_tabs_for_min_size = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Food" type="GridContainer" parent="Pivot/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 36.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_constants/vseparation = 8
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Apple" type="NinePatchRect" parent="Pivot/TabContainer/Food"]
+margin_right = 96.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 96, 96 )
+mouse_filter = 1
+texture = ExtResource( 24 )
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+value = 1.0
+
+[node name="Item" type="TextureRect" parent="Pivot/TabContainer/Food/Apple"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="Pivot/TabContainer/Food/Apple"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+hint_tooltip = "An apple a day keeps the doctor away.
+Apples keep you healthy so buy some for and your kids!
+
+Food: 2
+Happiness: 2
+Stress: -3
+
+Price: $1"
+texture_normal = ExtResource( 31 )
+texture_pressed = ExtResource( 25 )
+texture_hover = ExtResource( 30 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Baguette" parent="Pivot/TabContainer/Food" instance=ExtResource( 7 )]
+value = 8.0
+item_index = 1
+
+[node name="Banana" parent="Pivot/TabContainer/Food" instance=ExtResource( 8 )]
+value = 4.0
+item_index = 2
+
+[node name="Kitchen" type="GridContainer" parent="Pivot/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 36.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_constants/vseparation = 8
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CounterTop" parent="Pivot/TabContainer/Kitchen" instance=ExtResource( 22 )]
+value = 20.0
+item_index = 3
+
+[node name="CounterTopCorner" parent="Pivot/TabContainer/Kitchen" instance=ExtResource( 20 )]
+value = 15.0
+item_index = 4
+
+[node name="Cabinet" parent="Pivot/TabContainer/Kitchen" instance=ExtResource( 16 )]
+value = 8.0
+item_index = 5
+
+[node name="Pan" parent="Pivot/TabContainer/Kitchen" instance=ExtResource( 21 )]
+value = 4.0
+item_index = 6
+
+[node name="Plate" parent="Pivot/TabContainer/Kitchen" instance=ExtResource( 9 )]
+value = 5.0
+item_index = 7
+
+[node name="Furniture" type="GridContainer" parent="Pivot/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 36.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_constants/vseparation = 8
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chair" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 12 )]
+value = 13.0
+item_index = 8
+
+[node name="CoffeeTable" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 13 )]
+value = 10.0
+item_index = 9
+
+[node name="Couch" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 14 )]
+value = 35.0
+item_index = 10
+
+[node name="Table" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 17 )]
+value = 20.0
+item_index = 11
+
+[node name="TableFancy" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 10 )]
+value = 30.0
+item_index = 12
+
+[node name="Wardrobe" parent="Pivot/TabContainer/Furniture" instance=ExtResource( 11 )]
+value = 40.0
+item_index = 13
+
+[node name="Kids" type="GridContainer" parent="Pivot/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 36.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_constants/vseparation = 8
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Crib" parent="Pivot/TabContainer/Kids" instance=ExtResource( 15 )]
+value = 7.0
+item_index = 14
+
+[node name="BabyDistractionToy" parent="Pivot/TabContainer/Kids" instance=ExtResource( 18 )]
+value = 13.0
+item_index = 15
+
+[node name="DrawingTable" parent="Pivot/TabContainer/Kids" instance=ExtResource( 19 )]
+value = 20.0
+item_index = 16
+
+[node name="Tech" type="GridContainer" parent="Pivot/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 36.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_constants/vseparation = 8
+columns = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Monitor" parent="Pivot/TabContainer/Tech" instance=ExtResource( 2 )]
+value = 40.0
+item_index = 17
+
+[node name="Tablet" parent="Pivot/TabContainer/Tech" instance=ExtResource( 3 )]
+value = 78.0
+item_index = 18
+
+[node name="TV" parent="Pivot/TabContainer/Tech" instance=ExtResource( 5 )]
+value = 489.0
+item_index = 19
+
+[node name="FancyMonitor" parent="Pivot/TabContainer/Tech" instance=ExtResource( 6 )]
+value = 785.0
+item_index = 20
+
+[node name="Shop" type="AnimationPlayer" parent="."]
+anims/On = SubResource( 2 )
+script = ExtResource( 29 )
+
+[node name="ShopButton" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -75.0
+margin_right = 75.0
+focus_mode = 0
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 27 )
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = SubResource( 3 )
+toggle_mode = true
+enabled_focus_mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Pivot/TabContainer/Food/Apple/Button" to="Pivot/TabContainer/Food/Apple" method="_on_Button_pressed"]
+[connection signal="toggled" from="ShopButton" to="Shop" method="_on_ShopButton_toggled"]

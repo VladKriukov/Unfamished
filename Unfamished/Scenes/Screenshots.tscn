@@ -1,0 +1,127 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Scenes/Apple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Cabinet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/CabinetBlank.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/DrawingDeskFull.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Pan.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Pizza.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Models/Textures/TabletScreen.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Baguette.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Banana.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/CabinetDoor.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Chair.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/CoffeeTable.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Couch.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/BabyDistractionToy.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Crib.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Monitor.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scenes/MonitorFancyScreen.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/MonitorScreen.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/MonitorFancy.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Scenes/TabletScreen.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Scenes/WallTV.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Scenes/Table1.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Scenes/Plate.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Scenes/PizzaBox.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Scenes/Table2.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Scenes/Tablet.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Scenes/WallTVScreen.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Scenes/Wardrobe.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Scenes/WardrobeDoorRight.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Scenes/WardrobeDoorLeft.tscn" type="PackedScene" id=38]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 7 )
+
+[node name="Screenshots" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.707107, -0.298836, 0.640857, 0, 0.906308, 0.422618, -0.707107, -0.298836, 0.640857, 2.915, 2.284, -346.349 )
+
+[node name="Apple" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+
+[node name="Baguette" parent="." instance=ExtResource( 8 )]
+
+[node name="Banana" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+
+[node name="Cabinet" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="CabinetBlank" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="CabinetDoor" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0.9 )
+
+[node name="Chair" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+
+[node name="CoffeeTable" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2 )
+
+[node name="Couch" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+
+[node name="Crib" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="DrawingDesk" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+
+[node name="Monitor" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
+
+[node name="MonitorFancy" parent="." instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4 )
+
+[node name="MonitorFancyScreen" parent="." instance=ExtResource( 19 )]
+visible = false
+
+[node name="MonitorScreen" parent="." instance=ExtResource( 20 )]
+visible = false
+
+[node name="Pan" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+
+[node name="Pizza" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4 )
+
+[node name="PizzaBox" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4 )
+
+[node name="Plate" parent="." instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4 )
+
+[node name="Table1" parent="." instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+
+[node name="Table2" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 4 )
+
+[node name="Tablet" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6 )
+
+[node name="TabletScreen" parent="." instance=ExtResource( 24 )]
+visible = false
+material/0 = SubResource( 1 )
+
+[node name="ToyHangingThing" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.98394, 1, -1.98745 )
+
+[node name="WallTV" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8 )
+
+[node name="WallTVScreen" parent="." instance=ExtResource( 35 )]
+visible = false
+
+[node name="Wardrobe" parent="." instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0 )
+
+[node name="WardrobeDoorLeft" parent="." instance=ExtResource( 38 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0 )
+
+[node name="WardrobeDoorRight" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0 )

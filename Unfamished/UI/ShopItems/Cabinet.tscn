@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://UI/ItemFrame.png" type="Texture" id=1]
+[ext_resource path="res://UI/ItemFramePressed.png" type="Texture" id=2]
+[ext_resource path="res://UI/ItemFrameHover.png" type="Texture" id=3]
+[ext_resource path="res://UI/ItemFrameTransparent.png" type="Texture" id=4]
+[ext_resource path="res://UI/Icons/Cabinet.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/ShopItem.gd" type="Script" id=6]
+
+[node name="Cabinet" type="NinePatchRect"]
+margin_left = 200.0
+margin_right = 296.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 96, 96 )
+hint_tooltip = "A nice cabinet to store things
+(doesn't do much really, but is fun to have)
+
+Happiness: 2
+Stress: 0
+
+Price: $8"
+mouse_filter = 1
+texture = ExtResource( 1 )
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+hint_tooltip = "A nice cabinet to store things
+(doesn't do much really, but is fun to have)
+
+Happiness: 2
+Stress: 0
+
+Price: $8"
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

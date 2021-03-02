@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cabinet.obj-3b62033d35379b943a8c7acde995a65b.mesh"
+
+[deps]
+
+files=[ "res://.import/Cabinet.obj-3b62033d35379b943a8c7acde995a65b.mesh" ]
+
+source_file="res://Models/Cabinet.obj"
+dest_files=[ "res://.import/Cabinet.obj-3b62033d35379b943a8c7acde995a65b.mesh", "res://.import/Cabinet.obj-3b62033d35379b943a8c7acde995a65b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

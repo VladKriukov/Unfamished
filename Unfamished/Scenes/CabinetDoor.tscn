@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/CabinetDoor.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Scripts/Interractable.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.5, 0.45, 0.05 )
+
+[node name="CabinetDoor" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="HingeJoint" type="HingeJoint" parent="."]
+
+[node name="StaticBody" type="RigidBody" parent="HingeJoint"]
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="HingeJoint/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.45, 0.05 )
+shape = SubResource( 1 )
+[connection signal="input_event" from="HingeJoint/StaticBody" to="HingeJoint/StaticBody" method="_on_StaticBody_input_event"]

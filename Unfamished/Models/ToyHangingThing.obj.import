@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ToyHangingThing.obj-170f11072bc3e017fc093612407740f4.mesh"
+
+[deps]
+
+files=[ "res://.import/ToyHangingThing.obj-170f11072bc3e017fc093612407740f4.mesh" ]
+
+source_file="res://Models/ToyHangingThing.obj"
+dest_files=[ "res://.import/ToyHangingThing.obj-170f11072bc3e017fc093612407740f4.mesh", "res://.import/ToyHangingThing.obj-170f11072bc3e017fc093612407740f4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/UIHolderThingRight.png" type="Texture" id=1]
+[ext_resource path="res://Funhouse.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="GamePlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="NinePatchRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -260.0
+margin_bottom = 69.0
+texture = ExtResource( 1 )
+patch_margin_left = 36
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Amount" type="Label" parent="Money"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -5.0
+custom_fonts/font = SubResource( 1 )
+text = "$0"
+align = 2
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

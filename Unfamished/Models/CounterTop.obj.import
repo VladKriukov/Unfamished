@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CounterTop.obj-0d518605599ac663558a23f0c74fa488.mesh"
+
+[deps]
+
+files=[ "res://.import/CounterTop.obj-0d518605599ac663558a23f0c74fa488.mesh" ]
+
+source_file="res://Models/CounterTop.obj"
+dest_files=[ "res://.import/CounterTop.obj-0d518605599ac663558a23f0c74fa488.mesh", "res://.import/CounterTop.obj-0d518605599ac663558a23f0c74fa488.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

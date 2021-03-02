@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/WallWindowSmall.obj-c74c63e736d8dcff9012bfed62a4e314.mesh"
+
+[deps]
+
+files=[ "res://.import/WallWindowSmall.obj-c74c63e736d8dcff9012bfed62a4e314.mesh" ]
+
+source_file="res://Models/WallWindowSmall.obj"
+dest_files=[ "res://.import/WallWindowSmall.obj-c74c63e736d8dcff9012bfed62a4e314.mesh", "res://.import/WallWindowSmall.obj-c74c63e736d8dcff9012bfed62a4e314.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/WardrobeDoorRight.obj-5a8dce4caf0dc88787ed5553adc0cde6.mesh"
+
+[deps]
+
+files=[ "res://.import/WardrobeDoorRight.obj-5a8dce4caf0dc88787ed5553adc0cde6.mesh" ]
+
+source_file="res://Models/WardrobeDoorRight.obj"
+dest_files=[ "res://.import/WardrobeDoorRight.obj-5a8dce4caf0dc88787ed5553adc0cde6.mesh", "res://.import/WardrobeDoorRight.obj-5a8dce4caf0dc88787ed5553adc0cde6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

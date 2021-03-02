@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SphereToy.obj-1d61a261f8b4103774f7bd0920279ba5.mesh"
+
+[deps]
+
+files=[ "res://.import/SphereToy.obj-1d61a261f8b4103774f7bd0920279ba5.mesh" ]
+
+source_file="res://Models/SphereToy.obj"
+dest_files=[ "res://.import/SphereToy.obj-1d61a261f8b4103774f7bd0920279ba5.mesh", "res://.import/SphereToy.obj-1d61a261f8b4103774f7bd0920279ba5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/WallTVScreen.obj-074eb298f348d90918a56472d3ca70ee.mesh"
+
+[deps]
+
+files=[ "res://.import/WallTVScreen.obj-074eb298f348d90918a56472d3ca70ee.mesh" ]
+
+source_file="res://Models/WallTVScreen.obj"
+dest_files=[ "res://.import/WallTVScreen.obj-074eb298f348d90918a56472d3ca70ee.mesh", "res://.import/WallTVScreen.obj-074eb298f348d90918a56472d3ca70ee.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

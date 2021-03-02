@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SmallStool.obj-7938895f339f541494da9d1ed9fdc377.mesh"
+
+[deps]
+
+files=[ "res://.import/SmallStool.obj-7938895f339f541494da9d1ed9fdc377.mesh" ]
+
+source_file="res://Models/SmallStool.obj"
+dest_files=[ "res://.import/SmallStool.obj-7938895f339f541494da9d1ed9fdc377.mesh", "res://.import/SmallStool.obj-7938895f339f541494da9d1ed9fdc377.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

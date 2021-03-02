@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CubeToy.obj-cadb46aed55ffd1e0ab5ca5aa787596c.mesh"
+
+[deps]
+
+files=[ "res://.import/CubeToy.obj-cadb46aed55ffd1e0ab5ca5aa787596c.mesh" ]
+
+source_file="res://Models/CubeToy.obj"
+dest_files=[ "res://.import/CubeToy.obj-cadb46aed55ffd1e0ab5ca5aa787596c.mesh", "res://.import/CubeToy.obj-cadb46aed55ffd1e0ab5ca5aa787596c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

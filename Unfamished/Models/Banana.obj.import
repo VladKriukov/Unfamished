@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Banana.obj-cacd840d0de0ad3a9072e4c512a582a1.mesh"
+
+[deps]
+
+files=[ "res://.import/Banana.obj-cacd840d0de0ad3a9072e4c512a582a1.mesh" ]
+
+source_file="res://Models/Banana.obj"
+dest_files=[ "res://.import/Banana.obj-cacd840d0de0ad3a9072e4c512a582a1.mesh", "res://.import/Banana.obj-cacd840d0de0ad3a9072e4c512a582a1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
